@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>round</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="registration_menu.css">
+    <script src="registration.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav_container">
+        <img src="round_logo_sticker.png" alt="Round" class="nav_logo">
+
+        <button class="nav_toggler">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+    </nav>
+    
+    <nav class="menu">
+      <button class="menu_close">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <ul class="navbar1">
+        <li><div class='icon'><ion-icon name="home"></ion-icon></div> <a href="main.html">Главная</a></li>
+        <li><div class='icon'><ion-icon name="map-outline"></ion-icon></div> <a href="tape.html">Лента</a></li>
+        <li><div class='icon'><ion-icon name="library-outline"></ion-icon></div> <a href="my_guide.html">Мои гайды</a></li>
+        <li><div class='icon'><ion-icon name="person-circle"></ion-icon></div> <a href="registration.html">Регистрация</a></li>
+        <li><div class='icon'><ion-icon name="create-outline"></ion-icon></div> <a href="create_guide.html">Создать гайд</a></li>
+        <li><div class='icon'><ion-icon name="call-outline"></ion-icon></div> <a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu_overlay"></div>
+
+    <article class="registration">
+        <div class="registration_overlay"></div>
+        <div class="registration_container">
+            <div class="block">
+                <section class="block__item block-item">
+                    <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
+                    <button class="block-item__btn signin-btn">Войти</button>
+                </section>
+                <section class="block__item block-item">
+                    <h2 class="block-item__title">У вас нет аккаунта?</h2>
+                    <button class="block-item__btn signup-btn">Зарегистрироваться</button>
+                </section>
+            </div>
+            <div class="form-box">
+                <form action="#" class="form form_signin">
+                    <h3 class="form-title">Вход</h3>
+                    <p>
+                        <input type="text" class="form_input" placeholder="Логин">
+                    </p>
+                    <p>
+                        <input type="password" class="form_input" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <button class="form__btn">Войти</button>
+                    </p>
+                    <p>
+                        <a href="" class="form__forgot">Восстановить пароль</a>
+                    </p>
+                </form>
+
+                <form action="#" class="form form_signup">
+                    <h3 class="form-title">Регистрация</h3>
+                    <p>
+                        <input type="text" class="form_input" placeholder="Логин">
+                    </p>
+                    <p>
+                        <input type="email" class="form_input" placeholder="Email">
+                    </p>
+                    <p>
+                        <input type="password" class="form_input" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <input type="password" class="form_input" placeholder="Подтвердите пароль">
+                    </p>
+                    <p>
+                        <button class="form__btn form__btn_signup">Зарегистрироваться</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </article>
+
+
+    <script src="main.js"></script>
+    <script  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+  </body>
+</html>

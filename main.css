@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.nav {
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.08);
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.nav_logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    height: 70px;
+    width: auto;
+}
+
+.nav_toggler {
+    background-color: black;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_toggler ion-icon {
+    color: white;
+    transition: opacity .09s ease-out;
+}
+
+.nav_toggler ion-icon:hover {
+    opacity: 0.7;
+}
+
+.menu {
+    z-index: 35;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    background-color: black;
+    box-shadow: 6px 5px 7px rgba(255, 255, 255, 0.2);
+    max-width: 100%;
+    transition: all 190ms ease-out;
+    opacity: 0;
+    left: -320px;
+    visibility: hidden;
+}
+
+.menu_show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+.menu_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 0;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_close ion-icon {
+    color: white;
+    opacity: 0.3;
+    transition: opacity .09s ease-out;
+}
+
+.menu_close ion-icon:hover {
+    opacity: 0.7;
+}
+
+.navbar1 {
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.navbar1 li {
+    padding-bottom: 50px;
+    display: flex;
+    align-content: center;
+}
+
+.icon {
+    font-size: 2rem;
+    display: flex;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.icon ion-icon {
+    color: white;
+}
+
+.navbar1 li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .09s ease-out;
+    font-size: 1.6rem;
+}
+
+.navbar1 li a:hover {
+    opacity: 0.7;
+}
+
+.menu_overlay {
+    position: fixed;
+    z-index: 31;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.menu_overlay_show {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    background-image: url(main.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header_title {
+    position: relative;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.header_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header_container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
